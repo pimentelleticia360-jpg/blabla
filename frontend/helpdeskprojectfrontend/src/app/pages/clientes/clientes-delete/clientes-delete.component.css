@@ -1,0 +1,23 @@
+.container {
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.subtitulo {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.card {
+  padding: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}

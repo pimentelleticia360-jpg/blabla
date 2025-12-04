@@ -1,0 +1,51 @@
+/* Centraliza o card na tela e dá uma sombra bonita (pela classe mat-elevation-z8 no HTML) */
+.container {
+  width: 80%; /* Ocupa 80% da tela */
+  margin: 2rem auto; /* Centraliza horizontalmente e dá espaço vertical */
+  padding: 2rem;
+  background-color: #fff; /* Fundo branco se o fundo do app for escuro */
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Título centralizado */
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #3f51b5; /* Cor primária do tema (Indigo) */
+}
+
+/* Configuração Flexbox para empilhar os campos */
+.formulario {
+  display: flex;
+  flex-direction: column; /* Força um campo embaixo do outro */
+  width: 100%;
+}
+
+/* Classe utilitária para esticar os inputs */
+.full-width {
+  width: 100%;
+  margin-bottom: 1rem; /* Espaço entre os campos */
+}
+
+/* Área dos botões */
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Botões afastados (um na esq, outro na dir) */
+  margin-top: 1rem;
+}
+
+/* Tamanho dos botões */
+button {
+  width: 48%; /* Cada botão ocupa quase metade da largura */
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Responsividade para celular: container ocupa 100% */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+}

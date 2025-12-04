@@ -1,0 +1,35 @@
+<div class="container mat-elevation-z8">
+
+  <h1 class="titulo">Deletar Cliente</h1>
+
+  <form class="form">
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput [value]="cliente.nome" disabled>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>CPF</mat-label>
+      <input matInput [value]="cliente.cpf" disabled>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput [value]="cliente.email" disabled>
+    </mat-form-field>
+
+    <div class="button-group">
+      <!-- CORREÇÃO: (click)="delete()" em vez de "deletar()" -->
+      <button mat-raised-button color="warn" (click)="delete()">
+        <mat-icon>delete</mat-icon> Deletar
+      </button>
+
+      <button mat-raised-button color="primary" (click)="cancelar()">
+        <mat-icon>arrow_back</mat-icon> Cancelar
+      </button>
+    </div>
+
+  </form>
+
+</div>

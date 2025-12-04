@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* ===== Fundo global para Home / Técnicos / Clientes ===== */
+.app-bg {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: flex-start; /* use center para centralizar verticalmente */
+  justify-content: center;
+  padding: 40px 24px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%2373b7ff'/><stop offset='1' stop-color='%23005bea'/></linearGradient></defs><rect width='100%25' height='100%25' fill='url(%23g)'/><text x='50%25' y='55%25' font-size='120' text-anchor='middle' fill='white' opacity='0.06' font-family='Arial'>HELP DESK</text></svg>");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+/* ===== Cartão branco padrão por cima do fundo ===== */
+.app-card {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 6px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  color: #222;
+}
+
+.app-card h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+}
+
+.app-card .subtitle {
+  margin-top: 6px;
+  color: #666;
+  font-size: 0.95rem;
+}

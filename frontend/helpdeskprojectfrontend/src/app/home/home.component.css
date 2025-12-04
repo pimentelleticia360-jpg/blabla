@@ -1,0 +1,90 @@
+.container {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: #3f51b5;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+/* Container dos Cards */
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+}
+
+/* Estilo Base do Card */
+.card {
+  flex: 1; /* Divide o espaço igualmente */
+  min-width: 250px;
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efeito de levitar ao passar o mouse */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-content h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.card-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.icon {
+  transform: scale(3); /* Aumenta o ícone */
+  opacity: 0.5; /* Deixa o ícone meio transparente */
+}
+
+/* Cores Específicas */
+.card-aberto {
+  background: linear-gradient(45deg, #4caf50, #81c784); /* Verde */
+}
+
+.card-andamento {
+  background: linear-gradient(45deg, #2196f3, #64b5f6); /* Azul */
+}
+
+.card-encerrado {
+  background: linear-gradient(45deg, #607d8b, #90a4ae); /* Cinza */
+}
+
+/* Ilustração */
+.ilustracao {
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.ilustracao img {
+  max-width: 400px;
+  width: 100%;
+}

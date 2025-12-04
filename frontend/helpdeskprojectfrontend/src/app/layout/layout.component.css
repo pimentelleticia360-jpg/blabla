@@ -1,0 +1,65 @@
+/* Estilo para garantir que o container ocupe a tela */
+.app-container {
+    /* Altura total da tela menos a altura da toolbar (64px) */
+    height: calc(100vh - 64px);
+}
+
+/* largura da sidenav */
+mat-sidenav {
+    width: 250px; /* Largura da barra lateral */
+}
+
+/* área onde o conteúdo das rotas aparece */
+.content-area {
+    padding: 15px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 64px);
+    background-color: #fafafa; /* leve tom neutro por padrão */
+}
+
+/* espaçador para empurrar itens pra direita */
+.spacer {
+    flex: 1 1 auto;
+}
+
+/* Estilo para realçar o link ativo */
+.active-link {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* ========================
+   Estilização da Toolbar
+   ======================== */
+
+/* classe aplicada em mat-toolbar */
+.app-toolbar {
+  /* gradiente azul suave */
+  background: linear-gradient(90deg, #2b5aa6 0%, #1f8bd3 50%, #0b6bd6 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* texto do título */
+.app-toolbar span {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* garante altura e alinhamento correto */
+.app-toolbar .mat-toolbar-row,
+.app-toolbar {
+  min-height: 64px;
+}
+
+/* torna os ícones da toolbar brancos */
+.app-toolbar .mat-icon {
+  color: #fff !important;
+}
+
+/* responsividade: quando a tela for pequena, fecha a sidenav por padrão (se quiser) */
+/* você pode controlar isso melhor via MatSidenavConfig no TS do layout */
+@media (max-width: 800px) {
+  mat-sidenav {
+    width: 200px;
+  }
+}

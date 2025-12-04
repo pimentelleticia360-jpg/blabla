@@ -1,0 +1,46 @@
+<div class="container mat-elevation-z8">
+
+  <h1 class="titulo">Cadastrar Cliente</h1>
+  <p class="subtitulo">Preencha os dados do cliente.</p>
+
+  <form [formGroup]="form" class="form">
+
+    <!-- Nome -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="nome" placeholder="Ex: João da Silva">
+      <mat-icon matSuffix>person</mat-icon>
+      <mat-error *ngIf="form.get('nome')?.invalid">Nome é obrigatório</mat-error>
+    </mat-form-field>
+
+    <!-- CPF -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>CPF</mat-label>
+      <input matInput formControlName="cpf" mask="000.000.000-00" placeholder="000.000.000-00">
+      <mat-icon matSuffix>pin</mat-icon>
+      <mat-error *ngIf="form.get('cpf')?.invalid">CPF inválido</mat-error>
+    </mat-form-field>
+
+    <!-- Email -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Ex: cliente@email.com">
+      <mat-icon matSuffix>email</mat-icon>
+      <mat-error *ngIf="form.get('email')?.invalid">Email inválido</mat-error>
+    </mat-form-field>
+
+    <!-- CAMPO DE SENHA REMOVIDO -->
+
+    <div class="button-group">
+      <button mat-raised-button color="primary" (click)="create()" [disabled]="form.invalid">
+        <mat-icon>save</mat-icon> Salvar
+      </button>
+
+      <button mat-raised-button color="warn" (click)="cancelar()">
+        <mat-icon>arrow_back</mat-icon> Cancelar
+      </button>
+    </div>
+
+  </form>
+
+</div>

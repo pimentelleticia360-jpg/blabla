@@ -1,0 +1,60 @@
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3f51b5;
+}
+
+table {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.prioridade-0 { background-color: #4caf50; }
+.prioridade-1 { background-color: #ff9800; }
+.prioridade-2 { background-color: #f44336; }
+
+.status-0 { background-color: #4caf50; }
+.status-1 { background-color: #2196f3; }
+.status-2 { background-color: #607d8b; }
+
+.edit {
+  color: #ff9800;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.view {
+  color: #3f51b5;
+  margin-right: 10px; /* Espaço para o botão de deletar */
+  cursor: pointer;
+}
+
+/* ESTILO DO BOTÃO DELETAR */
+.delete {
+  color: #f44336; /* Vermelho */
+  cursor: pointer;
+}
+
+.btn-create {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}

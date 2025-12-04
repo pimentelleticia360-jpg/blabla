@@ -1,0 +1,34 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.subtitulo {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.btn-novo {
+  width: 160px;
+}
+
+.tabela {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.col-acoes {
+  text-align: center;
+  width: 120px;
+}
